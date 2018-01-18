@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>CareerVitals</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<!-- Vendor Styles -->
+	<link rel="stylesheet" href="vendor/jquery-ui.min.css" />
+	
+	<link rel="stylesheet" href="vendor/slick.css" />
+	
+	<link rel="stylesheet" href="vendor/magnific-popup.css" />
+
+	<!-- App Styles -->
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- Vendor JS -->
+	<script src="vendor/jquery-1.12.4.min.js"></script>
+	
+	<script src="vendor/jquery-ui.min.js"></script>
+	
+	<script src="vendor/slick.min.js"></script>
+	
+	<script src="vendor/jquery.magnific-popup.min.js"></script>
+
+	<!-- App JS -->
+	<script src="js/functions.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="shell-secondary">
+			<a href="#" class="logo">CareerVitals</a>
+			
+			<a href="#" class="btn-menu">
+				<span></span>
+			</a>
+			
+			<div class="header-content">
+				<nav class="nav">
+					<ul>
+						<li>
+							<a href="#">Browse Healthcare jobs</a>
+						</li>
+						
+						<li>
+							<a href="#">Post Resume</a>
+						</li>
+						
+						<li>
+							<a href="#">$99 Resume Writing</a>
+						</li>
+					</ul>
+				</nav><!-- /.nav -->
+				
+				<div class="header-inner">
+					<nav class="nav-utilities">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="ico ico-people"></i>
+									
+									Sign Up
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">Sign in</a>
+							</li>
+							
+							<li>
+								<a href="#" class="btn btn-orange">Employers</a>
+							</li>
+						</ul>
+					</nav><!-- /.nav-utilities -->
+				</div><!-- /.header-inner -->
+			</div><!-- /.header-content -->
+		</div><!-- /.shell-secondary -->
+	</header><!-- /.header -->
+	<div class="intro">
+		<div class="shell">
+			<div class="form-search-job">
+				<form action="?" method="post">
+					<div class="form-content">
+						<div class="form-row">
+							<label for="field-job-title" class="hidden">job title or keyword</label>
+							
+							<div class="form-controls">
+								<input type="text" class="field" name="field-job-title" id="field-job-title" value="" placeholder="Job title or keyword">
+							</div><!-- /.form-controls -->
+						
+							<label for="field-location" class="hidden">Location</label>
+							
+							<div class="form-controls">
+								<input type="text" class="field" name="field-location" id="field-location" value="" placeholder="Location">
+							</div><!-- /.form-controls -->
+						</div><!-- /.form-row -->
+					</div><!-- /.form-content -->						
+					
+					<div class="form-actions">
+						<input type="submit" value="Search" class="form-btn btn-orange">
+						
+						<a href="#" class="link">Browse jobs</a>
+					</div><!-- /.form-actions -->
+				</form>
+			</div><!-- /.form-search-job -->
+		</div><!-- /.shell -->
+	</div><!-- /.intro -->
+	
+	<div class="main main-secondary">
+		<div class="shell">
+			<section class="section-info">
+				<div class="tabs">
+					<div class="tabs-head">
+						<nav class=" tabs-nav nav-secondary">
+							<ul>
+								<li>
+									<a href="#tab1">Personal Info</a>
+								</li>
+								
+								<li class="current">
+									<a href="#">Professional Info</a>
+								</li>
+								
+								<li>
+									<a href="#">Resumes/ Cover Letters</a>
+								</li>
+								
+								<li>
+									<a href="#">Recommendations</a>
+								</li>
+							</ul>
+						</nav><!-- /.nav-secondary -->
+					</div><!-- /.tabs-head -->
+					
+					<div class="tabs-body">
+						<div class="tab" id="tab1">
+							<div class="form-info">
+								<form action="?" method="post">
+									<div class="form-content">
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Professional Summary</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-desired-job-title" class="form-label">Desired Job Title*</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-desired-job-title" id="field-desired-job-title" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												<div class="form-row">
+													<label for="field-proffession" class="form-label">Profession*</label>
+													
+													<div class="form-controls">
+														<select name="field-proffession" id="field-proffession" class="select">
+															<option value="">Select Profession</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-career-level" class="form-label">Career Level*</label>
+													
+													<div class="form-controls">
+														<select name="field-career-level" id="field-career-level" class="select">
+															<option value="">Select Career Level</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-years-of-experience" class="form-label">Years Of Experience*</label>
+													
+													<div class="form-controls">
+														<select name="field-years-of-experience" id="field-years-of-experience" class="select">
+															<option value="">Select Years Of Experience</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-availability" class="form-label">Availability*</label>
+													
+													<div class="form-controls">
+														<select name="field-availability" id="field-availability" class="select">
+															<option value="">Select Availability</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Skills</h4>
+												
+												<span>
+													Enter your top professional skills and specialities. The more you add, the better we can match you.
+												</span>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-col form-col-1of2">
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+												</div><!-- /.form-col form-col-1of2 -->
+												
+												<div class="form-col form-col-1of2">
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+												</div><!-- /.form-col form-col-1of2 -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section form-section-secondary">
+											<div class="form-head">
+												<h4>Employment</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-employer" class="form-label">Employer</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-employer" id="field-employer" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-job-title" class="form-label">Job Title</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-job-title" id="field-job-title" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-dates" class="form-label">Dates</label>
+													
+													<input type="text" class="field" name="field-start-date" id="field-start-date" value="" placeholder="mm/yyyy">
+												
+													<label for="field-to" class="form-label form-label-secondary">to</label>
+													
+													<input type="text" class="field" name="field-end-date" id="field-end-date" value="" placeholder="mm/yyyy">
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add job</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Education</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-degree-level" class="form-label">Degree Level</label>
+													
+													<div class="form-controls">
+														<select name="field-degree-level" id="field-degree-level" class="select">
+															<option value="">Select Degree Level</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-school-name" class="form-label">School Name</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-school-name" id="field-school-name" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add Education</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-row">
+												<div class="form-head">
+													<h4>Certification</h4>
+												</div><!-- /.form-head -->
+											
+												<div class="form-body">
+													<div class="form-row">
+														<label for="field-certification" class="form-label">Certification</label>
+													
+													<div class="form-controls">
+														<select name="field-certification" id="field-certification" class="select">
+															<option value="">Select Degree</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-school-name" class="form-label">School Name</label>
+												
+													<div class="form-controls">
+														<input type="text" class="field" name="field-school-name" id="field-school-name" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add Certification</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+									</div><!-- /.form-content -->
+																
+									<div class="form-actions">
+										<input type="submit" value="Save Changes" class="form-btn">
+										
+										<br>
+										
+										<a href="#" class="link">Cancel</a>
+									</div><!-- /.form-actions -->
+								</div>
+								</form>
+							</div><!-- /.form-info -->
+						</div><!-- /.tab -->
+						
+						<div class="tab current" id="tab2">
+							<div class="form-info">
+								<form action="?" method="post">
+									<div class="form-content">
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Professional Summary</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-desired-job-title" class="form-label">Desired Job Title*</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-desired-job-title" id="field-desired-job-title" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												<div class="form-row">
+													<label for="field-proffession" class="form-label">Profession*</label>
+													
+													<div class="form-controls">
+														<select name="field-proffession" id="field-proffession" class="select">
+															<option value="">Select Profession</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-career-level" class="form-label">Career Level*</label>
+													
+													<div class="form-controls">
+														<select name="field-career-level" id="field-career-level" class="select">
+															<option value="">Select Career Level</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-years-of-experience" class="form-label">Years Of Experience*</label>
+													
+													<div class="form-controls">
+														<select name="field-years-of-experience" id="field-years-of-experience" class="select">
+															<option value="">Select Years Of Experience</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-availability" class="form-label">Availability*</label>
+													
+													<div class="form-controls">
+														<select name="field-availability" id="field-availability" class="select">
+															<option value="">Select Availability</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Skills</h4>
+												
+												<span>
+													Enter your top professional skills and specialities. The more you add, the better we can match you.
+												</span>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-col form-col-1of2">
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+												</div><!-- /.form-col form-col-1of2 -->
+												
+												<div class="form-col form-col-1of2">
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+												</div><!-- /.form-col form-col-1of2 -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section form-section-secondary">
+											<div class="form-head">
+												<h4>Employment</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-employer" class="form-label">Employer</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-employer" id="field-employer" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-job-title" class="form-label">Job Title</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-job-title" id="field-job-title" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-dates" class="form-label">Dates</label>
+													
+													<input type="text" class="field" name="field-start-date" id="field-start-date" value="" placeholder="mm/yyyy">
+												
+													<label for="field-to" class="form-label form-label-secondary">to</label>
+													
+													<input type="text" class="field" name="field-end-date" id="field-end-date" value="" placeholder="mm/yyyy">
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add job</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Education</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-degree-level" class="form-label">Degree Level</label>
+													
+													<div class="form-controls">
+														<select name="field-degree-level" id="field-degree-level" class="select">
+															<option value="">Select Degree Level</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-school-name" class="form-label">School Name</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-school-name" id="field-school-name" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add Education</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-row">
+												<div class="form-head">
+													<h4>Certification</h4>
+												</div><!-- /.form-head -->
+											
+												<div class="form-body">
+													<div class="form-row">
+														<label for="field-certification" class="form-label">Certification</label>
+													
+													<div class="form-controls">
+														<select name="field-certification" id="field-certification" class="select">
+															<option value="">Select Degree</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-school-name" class="form-label">School Name</label>
+												
+													<div class="form-controls">
+														<input type="text" class="field" name="field-school-name" id="field-school-name" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add Certification</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+									</div><!-- /.form-content -->
+																
+									<div class="form-actions">
+										<input type="submit" value="Save Changes" class="form-btn">
+										
+										<br>
+										
+										<a href="#" class="link">Cancel</a>
+									</div><!-- /.form-actions -->
+								</div>
+								</form>
+							</div><!-- /.form-info -->
+						</div><!-- /.tab -->
+						
+						<div class="tab" id="tab3">
+							<div class="form-info">
+								<form action="?" method="post">
+									<div class="form-content">
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Professional Summary</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-desired-job-title" class="form-label">Desired Job Title*</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-desired-job-title" id="field-desired-job-title" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												<div class="form-row">
+													<label for="field-proffession" class="form-label">Profession*</label>
+													
+													<div class="form-controls">
+														<select name="field-proffession" id="field-proffession" class="select">
+															<option value="">Select Profession</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-career-level" class="form-label">Career Level*</label>
+													
+													<div class="form-controls">
+														<select name="field-career-level" id="field-career-level" class="select">
+															<option value="">Select Career Level</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-years-of-experience" class="form-label">Years Of Experience*</label>
+													
+													<div class="form-controls">
+														<select name="field-years-of-experience" id="field-years-of-experience" class="select">
+															<option value="">Select Years Of Experience</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-availability" class="form-label">Availability*</label>
+													
+													<div class="form-controls">
+														<select name="field-availability" id="field-availability" class="select">
+															<option value="">Select Availability</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Skills</h4>
+												
+												<span>
+													Enter your top professional skills and specialities. The more you add, the better we can match you.
+												</span>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-col form-col-1of2">
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+												</div><!-- /.form-col form-col-1of2 -->
+												
+												<div class="form-col form-col-1of2">
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+												</div><!-- /.form-col form-col-1of2 -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section form-section-secondary">
+											<div class="form-head">
+												<h4>Employment</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-employer" class="form-label">Employer</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-employer" id="field-employer" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-job-title" class="form-label">Job Title</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-job-title" id="field-job-title" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-dates" class="form-label">Dates</label>
+													
+													<input type="text" class="field" name="field-start-date" id="field-start-date" value="" placeholder="mm/yyyy">
+												
+													<label for="field-to" class="form-label form-label-secondary">to</label>
+													
+													<input type="text" class="field" name="field-end-date" id="field-end-date" value="" placeholder="mm/yyyy">
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add job</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Education</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-degree-level" class="form-label">Degree Level</label>
+													
+													<div class="form-controls">
+														<select name="field-degree-level" id="field-degree-level" class="select">
+															<option value="">Select Degree Level</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-school-name" class="form-label">School Name</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-school-name" id="field-school-name" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add Education</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-row">
+												<div class="form-head">
+													<h4>Certification</h4>
+												</div><!-- /.form-head -->
+											
+												<div class="form-body">
+													<div class="form-row">
+														<label for="field-certification" class="form-label">Certification</label>
+													
+													<div class="form-controls">
+														<select name="field-certification" id="field-certification" class="select">
+															<option value="">Select Degree</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-school-name" class="form-label">School Name</label>
+												
+													<div class="form-controls">
+														<input type="text" class="field" name="field-school-name" id="field-school-name" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add Certification</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+									</div><!-- /.form-content -->
+																
+									<div class="form-actions">
+										<input type="submit" value="Save Changes" class="form-btn">
+										
+										<br>
+										
+										<a href="#" class="link">Cancel</a>
+									</div><!-- /.form-actions -->
+								</div>
+								</form>
+							</div><!-- /.form-info -->
+						</div><!-- /.tab -->
+						
+						<div class="tab" id="tab4">
+							<div class="form-info">
+								<form action="?" method="post">
+									<div class="form-content">
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Professional Summary</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-desired-job-title" class="form-label">Desired Job Title*</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-desired-job-title" id="field-desired-job-title" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												<div class="form-row">
+													<label for="field-proffession" class="form-label">Profession*</label>
+													
+													<div class="form-controls">
+														<select name="field-proffession" id="field-proffession" class="select">
+															<option value="">Select Profession</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-career-level" class="form-label">Career Level*</label>
+													
+													<div class="form-controls">
+														<select name="field-career-level" id="field-career-level" class="select">
+															<option value="">Select Career Level</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-years-of-experience" class="form-label">Years Of Experience*</label>
+													
+													<div class="form-controls">
+														<select name="field-years-of-experience" id="field-years-of-experience" class="select">
+															<option value="">Select Years Of Experience</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-availability" class="form-label">Availability*</label>
+													
+													<div class="form-controls">
+														<select name="field-availability" id="field-availability" class="select">
+															<option value="">Select Availability</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Skills</h4>
+												
+												<span>
+													Enter your top professional skills and specialities. The more you add, the better we can match you.
+												</span>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-col form-col-1of2">
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+												</div><!-- /.form-col form-col-1of2 -->
+												
+												<div class="form-col form-col-1of2">
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+													
+													<div class="form-row">
+														<label for="field-enter-skill" class="hidden">Enter Skill</label>
+														
+														<div class="form-controls">
+															<input type="text" class="field" name="field-enter-skill" id="field-enter-skill" value="" placeholder="Enter Skill">
+														</div><!-- /.form-controls -->
+													</div><!-- /.form-row -->
+												</div><!-- /.form-col form-col-1of2 -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section form-section-secondary">
+											<div class="form-head">
+												<h4>Employment</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-employer" class="form-label">Employer</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-employer" id="field-employer" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-job-title" class="form-label">Job Title</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-job-title" id="field-job-title" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-dates" class="form-label">Dates</label>
+													
+													<input type="text" class="field" name="field-start-date" id="field-start-date" value="" placeholder="mm/yyyy">
+												
+													<label for="field-to" class="form-label form-label-secondary">to</label>
+													
+													<input type="text" class="field" name="field-end-date" id="field-end-date" value="" placeholder="mm/yyyy">
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add job</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-head">
+												<h4>Education</h4>
+											</div><!-- /.form-head -->
+											
+											<div class="form-body">
+												<div class="form-row">
+													<label for="field-degree-level" class="form-label">Degree Level</label>
+													
+													<div class="form-controls">
+														<select name="field-degree-level" id="field-degree-level" class="select">
+															<option value="">Select Degree Level</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-school-name" class="form-label">School Name</label>
+													
+													<div class="form-controls">
+														<input type="text" class="field" name="field-school-name" id="field-school-name" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add Education</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+										
+										<div class="form-section">
+											<div class="form-row">
+												<div class="form-head">
+													<h4>Certification</h4>
+												</div><!-- /.form-head -->
+											
+												<div class="form-body">
+													<div class="form-row">
+														<label for="field-certification" class="form-label">Certification</label>
+													
+													<div class="form-controls">
+														<select name="field-certification" id="field-certification" class="select">
+															<option value="">Select Degree</option>
+														</select>
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-row">
+													<label for="field-school-name" class="form-label">School Name</label>
+												
+													<div class="form-controls">
+														<input type="text" class="field" name="field-school-name" id="field-school-name" value="">
+													</div><!-- /.form-controls -->
+												</div><!-- /.form-row -->
+												
+												<div class="form-inner">
+													<a href="#" class="link">Add Certification</a>
+												</div><!-- /.form-inner -->
+											</div><!-- /.form-body -->
+										</div><!-- /.form-section -->
+									</div><!-- /.form-content -->
+																
+									<div class="form-actions">
+										<input type="submit" value="Save Changes" class="form-btn">
+										
+										<br>
+										
+										<a href="#" class="link">Cancel</a>
+									</div><!-- /.form-actions -->
+								</div>
+								</form>
+							</div><!-- /.form-info -->
+						</div><!-- /.tab -->
+					</div><!-- /.tabs-body -->
+				</div><!-- /.tabs -->
+			</section><!-- /.section-info -->
+		</div><!-- /.shell -->
+	</div><!-- /.main main-secondary -->		
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="shell">
+				<div class="footer-col footer-col-1of4">
+					<h5>
+						Healthcare Job Seekers
+						
+						<i class="ico ico-footer-arrow-down"></i>
+					</h5>
+					
+					<div class="footer-col-inner">
+						<ul class="list-links">
+							<li>
+								<a href="#">Search Healthcare Jobs</a>
+							</li>
+							
+							<li>
+								<a href="#">Post Resume</a>
+							</li>
+							
+							<li>
+								<a href="#">Create Healthcare Job Alerts</a>
+							</li>
+							
+							<li>
+								<a href="#">Research Colleges</a>
+							</li>
+							
+							<li>
+								<a href="#">Degree Programs</a>
+							</li>
+							
+							<li>
+								<a href="#">Resume Writing Service</a>
+							</li>
+						</ul><!-- /.list-links -->
+						
+						<nav class="nav-access">
+							<ul>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+								
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+							</ul>
+						</nav><!-- /.nav-access -->
+					</div><!-- /.footer-col-inner -->
+				</div><!-- /.footer-col footer-col-1of4 -->
+				
+				<div class="footer-col footer-col-1of4">
+					<h5>
+						Employers
+						
+						<i class="ico ico-footer-arrow-down"></i>
+					</h5>
+					
+					<div class="footer-col-inner">
+						<ul class="list-links">
+							<li>
+								<a href="#">Plans &amp; Pricing</a>
+							</li>
+							
+							<li>
+								<a href="#">Post Healthcare Jobs</a>
+							</li>
+							
+							<li>
+								<a href="#">Search Resumes</a>
+							</li>
+						</ul><!-- /.list-links -->
+						
+						<nav class="nav-access">
+							<ul>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+								
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+							</ul>
+						</nav><!-- /.nav-access -->
+					</div><!-- /.footer-col-inner -->
+				</div><!-- /.footer-col footer-col-1of4 -->
+				
+				<div class="footer-col footer-col-1of4">
+					<h5>
+						Partners 
+						
+						<i class="ico ico-footer-arrow-down"></i>
+					</h5>
+					
+					<div class="footer-col-inner">
+						<ul class="list-links">
+							<li>
+								<a href="#">Advertiser Solutions</a>
+							</li>
+							
+							<li>
+								<a href="#">Submit XML Job Feed</a>
+							</li>
+						</ul><!-- /.list-links -->
+						
+						<nav class="nav-access">
+							<ul>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+								
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+							</ul>
+						</nav><!-- /.nav-access -->
+					</div><!-- /.footer-col-inner -->
+				</div><!-- /.footer-col footer-col-1of4 -->
+				
+				<div class="footer-col footer-col-1of4">
+					<h5>
+						CareerVitals
+						
+						<i class="ico ico-footer-arrow-down"></i>
+					</h5>
+					
+					<div class="footer-col-inner">
+						<ul class="list-links">
+							<li>
+								<a href="#">About</a>
+							</li>
+							
+							<li>
+								<a href="#">Contact Us</a>
+							</li>
+							
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+							
+							<li>
+								<a href="#">Terms of Service</a>
+							</li>
+						</ul><!-- /.list-links -->
+						
+						<nav class="nav-access">
+							<ul>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+								
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+							</ul>
+						</nav><!-- /.nav-access -->
+					</div><!-- /.footer-col-inner -->
+				</div><!-- /.footer-col footer-col-1of4 -->
+			</div><!-- /.shell -->
+		</div><!-- /.footer-content -->
+		
+		<div class="footer-inner">
+			<div class="shell">
+				<div class="socials">
+					<ul>
+						<li>
+							<a href="#">
+								<i class="ico ico-facebook"></i>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<i class="ico ico-twitter"></i>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#" class="logo-small"></a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<i class="ico ico-google"></i>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<i class="ico ico-linkedin"></i>
+							</a>
+						</li>
+					</ul>
+				</div><!-- /.socials -->
+				
+				<p class="copyright">
+					&copy;2016 CareerVitals. All Rights Reserved
+				</p><!-- /.copyright -->
+				
+				<p class="credits">Web Design by Basso Design Group</p><!-- /.credits -->
+			</div><!-- /.shell -->
+		</div><!-- /.footer-inner -->
+	</footer><!-- /.footer -->
+</div><!-- /.wrapper -->
+</body>
+</html>
+
+	

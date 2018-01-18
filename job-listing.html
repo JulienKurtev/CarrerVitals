@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>CareerVitals</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<!-- Vendor Styles -->
+	<link rel="stylesheet" href="vendor/jquery-ui.min.css" />
+	
+	<link rel="stylesheet" href="vendor/slick.css" />
+	
+	<link rel="stylesheet" href="vendor/magnific-popup.css" />
+
+	<!-- App Styles -->
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- Vendor JS -->
+	<script src="vendor/jquery-1.12.4.min.js"></script>
+	
+	<script src="vendor/jquery-ui.min.js"></script>
+	
+	<script src="vendor/slick.min.js"></script>
+	
+	<script src="vendor/jquery.magnific-popup.min.js"></script>
+
+	<!-- App JS -->
+	<script src="js/functions.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="shell-secondary">
+			<a href="#" class="logo">CareerVitals</a>
+			
+			<a href="#" class="btn-menu">
+				<span></span>
+			</a>
+			
+			<div class="header-content">
+				<nav class="nav">
+					<ul>
+						<li>
+							<a href="#">Browse Healthcare jobs</a>
+						</li>
+						
+						<li>
+							<a href="#">Post Resume</a>
+						</li>
+						
+						<li>
+							<a href="#">$99 Resume Writing</a>
+						</li>
+					</ul>
+				</nav><!-- /.nav -->
+				
+				<div class="header-inner">
+					<nav class="nav-utilities">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="ico ico-people"></i>
+									
+									Sign Up
+								</a>
+							</li>
+							
+							<li>
+								<a href="#">Sign in</a>
+							</li>
+							
+							<li>
+								<a href="#" class="btn btn-orange">Employers</a>
+							</li>
+						</ul>
+					</nav><!-- /.nav-utilities -->
+				</div><!-- /.header-inner -->
+			</div><!-- /.header-content -->
+		</div><!-- /.shell-secondary -->
+	</header><!-- /.header -->
+	<div class="intro">
+		<div class="shell">
+			<div class="form-search-job">
+				<form action="?" method="post">
+					<div class="form-content">
+						<div class="form-row">
+							<label for="field-job-title" class="hidden">job title or keyword</label>
+							
+							<div class="form-controls">
+								<input type="text" class="field" name="field-job-title" id="field-job-title" value="" placeholder="Nursing">
+							</div><!-- /.form-controls -->
+						
+							<label for="field-location" class="hidden">Location</label>
+							
+							<div class="form-controls">
+								<input type="text" class="field" name="field-location" id="field-location" value="" placeholder="Detroit">
+							</div><!-- /.form-controls -->
+						</div><!-- /.form-row -->
+					</div><!-- /.form-content -->						
+					
+					<div class="form-actions">
+						<input type="submit" value="Search" class="form-btn btn-orange">
+						
+						<a href="#" class="link">Browse jobs</a>
+					</div><!-- /.form-actions -->
+				</form>
+			</div><!-- /.form-search-job -->
+		</div><!-- /.shell -->
+	</div><!-- /.intro -->
+	
+	<div class="main-teritary">
+		<div class="shell">
+			<section class="section section-job-secondary">
+				<aside class="section-aside">
+					<h3>Filter Results:</h3>
+					
+					<ul class="widgets widgets-secondary">
+						<li class="widget widget-hiring">
+							<div class="widget-head">
+								<h4>Keywords:</h4>
+								
+								<span class="keywords">
+									<small>Nursing  </small>
+									
+									<a href="#">
+										<i class="ico ico-cross"></i>
+									</a>
+								</span>
+								
+								<h4>Location:</h4>
+								
+								<span>
+									<small>Detroit</small>
+									
+									<a href="#">
+										<i class="ico ico-cross"></i>
+									</a>
+								</span>
+							</div><!-- /.widget-head -->
+							
+							<div class="widget-body">
+								<div class="form-job">
+									<form action="?" method="post">
+										<div class="form-content">
+											<div class="form-row">
+												<label for="field-date-posted" class="form-label">Date Posted</label>
+												
+												<div class="form-controls">
+													<select name="field-date-posted" id="field-date-posted" class="select">
+														<option value="">30 Days</option>
+													</select>
+												</div><!-- /.form-controls -->
+											</div><!-- /.form-row -->
+											
+											<div class="form-row">
+												<label for="field-distance" class="form-label">Distance</label>
+												
+												<div class="form-controls">
+													<select name="field-distance" id="field-distance" class="select">
+														<option value="">20 Miles</option>
+													</select>
+												</div><!-- /.form-controls -->
+											</div><!-- /.form-row -->
+											
+											<div class="form-row">
+												<label for="field-srot-results" class="form-label">Srot Results By:</label>
+												
+												<div class="form-controls">
+													<select name="field-srot-results" id="field-srot-results" class="select">
+														<option value="">Best Match</option>
+													</select>
+												</div><!-- /.form-controls -->
+											</div><!-- /.form-row -->
+										</div><!-- /.form-content -->										
+										
+										<div class="form-actions">
+											<a href="#callout-popup" class="btn-open-popup form-btn">Create Job Alert</a>
+											
+											<div id="callout-popup" class="callout-popup mfp-hide">
+											<div class="form-job-alert">
+												<form action="?" method="post">
+													<div class="form-head">
+														<i class="ico ico-alert-message"></i>
+														
+														<h1>Get Notified When New Jobs Are Posted!</h1>
+														
+														<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+													</div><!-- /.form-head -->
+													
+													<div class="form-body">
+														<div class="form-row">
+															<label for="field-desired-job-title" class="hidden">Desired Job Title</label>
+															
+															<div class="form-controls">
+																<input type="text" class="field" name="field-desired-job-title" id="field-desired-job-title" value="" placeholder="Desired Job Title">
+															</div><!-- /.form-controls -->
+														</div><!-- /.form-row -->
+														
+														<div class="form-row">
+															<label for="field-city" class="hidden">City</label>
+															
+															<div class="form-controls">
+																<input type="text" class="field" name="field-city" id="field-city" value="" placeholder="City">
+															</div><!-- /.form-controls -->
+														</div><!-- /.form-row -->
+														
+														<div class="form-row">
+															<label for="field-state" class="hidden">State</label>
+															
+															<div class="form-controls">
+																<input type="text" class="field" name="field-state" id="field-state" value="" placeholder="State">
+															</div><!-- /.form-controls -->
+														</div><!-- /.form-row -->
+														
+														<div class="form-row">
+															<label for="field-your-email-address" class="hidden">Your Email Address</label>
+															
+															<div class="form-controls">
+																<input type="text" class="field" name="field-your-email-address" id="field-your-email-address" value="" placeholder="Your Email Address">
+															</div><!-- /.form-controls -->
+														</div><!-- /.form-row -->
+													</div><!-- /.form-body -->
+													
+													<div class="form-actions">
+														<input type="submit" value="Create Job Alert" class="form-btn btn-orange">
+														
+														<p>
+															By clicking “Create Job Alert” you are agreeing to our <a href="#">Terms of Use</a>
+														</p>
+													</div><!-- /.form-actions -->
+												</form>
+											</div><!-- /.form-job-alert -->
+										</div>
+										</div><!-- /.form-actions -->
+										
+										<div class="widget-inner">
+											<p>Hiring? <a href="#">Post a Job</a> for Free</p>
+										</div><!-- /.widget-inner -->
+										
+										
+									</form>
+								</div><!-- /.form-job -->
+							</div><!-- /.widget-body -->
+						</li><!-- /.widget -->
+						
+						<li class="wdiget widget-tool">
+							<h4>Career Tools:</h4>
+							
+							<ul class="list-tools">
+								<li>
+									<a href="#">Post Your Resume</a>
+								</li>
+								
+								<li>
+									<a href="#">Research Colleges</a>
+								</li>
+								
+								<li>
+									<a href="#">Compare Degree Programs</a>
+								</li>
+								
+								<li>
+									<a href="#">Get Certification Information</a>
+								</li>
+								
+								<li>
+									<a href="#">$99 Resume Writing Service</a>
+								</li>
+							</ul><!-- /.list-tools -->
+						</li><!-- /.wdiget widget-tool -->
+					</ul><!-- /.widgets -->
+				</aside><!-- /.section-aside -->
+				
+				<div class="section-content">
+					<h3>Nursing Jobs in Detroit, MI</h3>
+					
+					<ul class="jobs">
+						<li class="job current">
+							<div class="job-inner">
+								<div class="job-head">
+									<h4><a href="#">General Dentist Needed</a></h4>
+									
+									<span>24d</span>
+								</div><!-- /.job-head -->
+								
+								<div class="job-body">
+									<p>
+										Digitally Enhanced Dentistry - Lakewood NJ <br>	  
+										Fast-paced, high-tech, grow ing family dental practice in modern, <br>
+										spacious facility seeks  full-time  General Dentist Mon-Thurs from <br>
+										9:00-5:00 commencing on or about June 15. If you love the... <br>
+									</p>
+									
+									<ul class="list-options list-options-small">
+										<li>
+											<a href="#">
+												<i class="ico ico-star-white"></i>
+												
+												Save
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-mail-white"></i>
+												
+												Email
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-share-white"></i>
+												
+												Share
+											</a>
+										</li>
+									</ul><!-- /.list-options-small -->
+								</div><!-- /.job-body -->
+							</div><!-- /.job-inner -->
+						</li><!-- /.job -->
+						
+						<li class="job">
+							<div class="job-inner">
+								<div class="job-head">
+									<h4><a href="#">ICU Registered Nurse | Intensive Care RN</a></h4>
+									
+									<span>7d</span>
+								</div><!-- /.job-head -->
+								
+								<div class="job-body">
+									<p>
+										Favorite Healthcare Staffing - Stafford Springs, CT
+									</p>
+									
+									<ul class="list-options list-options-small">
+										<li>
+											<a href="#">
+												<i class="ico ico-star-small"></i>
+												
+												Save
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-mail-small"></i>
+												
+												Email
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-share-small"></i>
+												
+												Share
+											</a>
+										</li>
+									</ul><!-- /.list-options-small -->
+									
+									<div class="job-meta">
+										<span>Sponsored</span>
+									</div><!-- /.job-meta -->
+								</div><!-- /.job-body -->
+							</div><!-- /.job-inner -->
+						</li><!-- /.job -->
+						
+						<li class="job">
+							<div class="job-inner">
+								<div class="job-head">
+									<h4><a href="#">ICU Registered Nurse | Intensive Care RN</a></h4>
+									
+									<span>2d</span>
+								</div><!-- /.job-head -->
+								
+								<div class="job-body">
+									<p>
+										Favorite Healthcare Staffing - Stafford Springs, CT
+									</p>
+									
+									<ul class="list-options list-options-small">
+										<li>
+											<a href="#">
+												<i class="ico ico-star-small"></i>
+												
+												Save
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-mail-small"></i>
+												
+												Email
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-share-small"></i>
+												
+												Share
+											</a>
+										</li>
+									</ul><!-- /.list-options-small -->
+								</div><!-- /.job-body -->
+							</div><!-- /.job-inner -->
+						</li><!-- /.job -->
+						
+						<li class="job">
+							<div class="job-inner">
+								<div class="job-head">
+									<h4><a href="#">ICU Registered Nurse | Intensive Care RN</a></h4>
+									
+									<span>4d</span>
+								</div><!-- /.job-head -->
+								
+								<div class="job-body">
+									<p>
+										Favorite Healthcare Staffing - Stafford Springs, CT
+									</p>
+									
+									<ul class="list-options list-options-small">
+										<li>
+											<a href="#">
+												<i class="ico ico-star-small"></i>
+												
+												Save
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-mail-small"></i>
+												
+												Email
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-share-small"></i>
+												
+												Share
+											</a>
+										</li>
+									</ul><!-- /.list-options-small -->
+								</div><!-- /.job-body -->
+							</div><!-- /.job-inner -->
+						</li><!-- /.job -->
+						
+						<li class="job">
+							<div class="job-inner">
+								<div class="job-head">
+									<h4><a href="#">ICU Registered Nurse | Intensive Care RN</a></h4>
+									
+									<span>2d</span>
+								</div><!-- /.job-head -->
+								
+								<div class="job-body">
+									<p>
+										Favorite Healthcare Staffing - Stafford Springs, CT
+									</p>
+									
+									<ul class="list-options list-options-small">
+										<li>
+											<a href="#">
+												<i class="ico ico-star-small"></i>
+												
+												Save
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-mail-small"></i>
+												
+												Email
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-share-small"></i>
+												
+												Share
+											</a>
+										</li>
+									</ul><!-- /.list-options-small -->
+								</div><!-- /.job-body -->
+							</div><!-- /.job-inner -->
+						</li><!-- /.job -->
+						
+						<li class="job">
+							<div class="job-inner">
+								<div class="job-head">
+									<h4><a href="#">ICU Registered Nurse | Intensive Care RN</a></h4>
+									
+									<span>12d</span>
+								</div><!-- /.job-head -->
+								
+								<div class="job-body">
+									<p>
+										Favorite Healthcare Staffing - Stafford Springs, CT
+									</p>
+									
+									<ul class="list-options list-options-small">
+										<li>
+											<a href="#">
+												<i class="ico ico-star-small"></i>
+												
+												Save
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-mail-small"></i>
+												
+												Email
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-share-small"></i>
+												
+												Share
+											</a>
+										</li>
+									</ul><!-- /.list-options-small -->
+								</div><!-- /.job-body -->
+							</div><!-- /.job-inner -->
+						</li><!-- /.job -->
+						
+						<li class="job">
+							<div class="job-inner">
+								<div class="job-head">
+									<h4><a href="#">ICU Registered Nurse | Intensive Care RN</a></h4>
+									
+									<span>6d</span>
+								</div><!-- /.job-head -->
+								
+								<div class="job-body">
+									<p>
+										Favorite Healthcare Staffing - Stafford Springs, CT
+									</p>
+									
+									<ul class="list-options list-options-small">
+										<li>
+											<a href="#">
+												<i class="ico ico-star-small"></i>
+												
+												Save
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-mail-small"></i>
+												
+												Email
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-share-small"></i>
+												
+												Share
+											</a>
+										</li>
+									</ul><!-- /.list-options-small -->
+								</div><!-- /.job-body -->
+							</div><!-- /.job-inner -->
+						</li><!-- /.job -->
+						
+						<li class="job">
+							<div class="job-inner">
+								<div class="job-head">
+									<h4><a href="#">ICU Registered Nurse | Intensive Care RN</a></h4>
+									
+									<span>18d</span>
+								</div><!-- /.job-head -->
+								
+								<div class="job-body">
+									<p>
+										Favorite Healthcare Staffing - Stafford Springs, CT
+									</p>
+									
+									<ul class="list-options list-options-small">
+										<li>
+											<a href="#">
+												<i class="ico ico-star-small"></i>
+												
+												Save
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-mail-small"></i>
+												
+												Email
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-share-small"></i>
+												
+												Share
+											</a>
+										</li>
+									</ul><!-- /.list-options-small -->
+								</div><!-- /.job-body -->
+							</div><!-- /.job-inner -->
+						</li><!-- /.job -->
+						
+						<li class="job">
+							<div class="job-inner">
+								<div class="job-head">
+									<h4><a href="#">ICU Registered Nurse | Intensive Care RN</a></h4>
+									
+									<span>11d</span>
+								</div><!-- /.job-head -->
+								
+								<div class="job-body">
+									<p>
+										Favorite Healthcare Staffing - Stafford Springs, CT
+									</p>
+									
+									<ul class="list-options list-options-small">
+										<li>
+											<a href="#">
+												<i class="ico ico-star-small"></i>
+												
+												Save
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-mail-small"></i>
+												
+												Email
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-share-small"></i>
+												
+												Share
+											</a>
+										</li>
+									</ul><!-- /.list-options-small -->
+								</div><!-- /.job-body -->
+							</div><!-- /.job-inner -->
+						</li><!-- /.job -->
+						
+						<li class="job">
+							<div class="job-inner">
+								<div class="job-head">
+									<h4><a href="#">ICU Registered Nurse | Intensive Care RN</a></h4>
+									
+									<span>6d</span>
+								</div><!-- /.job-head -->
+								
+								<div class="job-body">
+									<p>
+										Favorite Healthcare Staffing - Stafford Springs, CT
+									</p>
+									
+									<ul class="list-options list-options-small">
+										<li>
+											<a href="#">
+												<i class="ico ico-star-small"></i>
+												
+												Save
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-mail-small"></i>
+												
+												Email
+											</a>
+										</li>
+										
+										<li>
+											<a href="#">
+												<i class="ico ico-share-small"></i>
+												
+												Share
+											</a>
+										</li>
+									</ul><!-- /.list-options-small -->
+								</div><!-- /.job-body -->
+							</div><!-- /.job-inner -->
+						</li><!-- /.job -->
+					</ul><!-- /.jobs -->
+					
+					<div class="section-paging">
+						<ul class="list-paging">
+							<li class="disabled">
+								<a href="#">
+									<i class="ico ico-prev"></i>
+								</a>
+							</li>
+							
+							<li class="current">
+								<a href="#">1</a>
+							</li>
+							
+							<li>
+								<a href="#">2</a>
+							</li>
+							
+							<li>
+								<a href="#">3</a>
+							</li>
+							
+							<li>
+								<a href="#">4</a>
+							</li>
+							
+							<li>
+								<a href="#">...</a>
+							</li>
+							
+							<li>
+								<a href="#">20</a>
+							</li>
+							
+							<li>
+								<a href="#">
+									<i class="ico ico-next"></i>
+								</a>
+							</li>
+						</ul><!-- /.list-paging -->
+					</div><!-- /.section-paging -->
+				</div><!-- /.section-content -->
+				
+				
+			</section><!-- /.section-->
+		</div><!-- /.shell -->
+	</div><!-- /.main -->
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="shell">
+				<div class="footer-col footer-col-1of4">
+					<h5>
+						Healthcare Job Seekers
+						
+						<i class="ico ico-footer-arrow-down"></i>
+					</h5>
+					
+					<div class="footer-col-inner">
+						<ul class="list-links">
+							<li>
+								<a href="#">Search Healthcare Jobs</a>
+							</li>
+							
+							<li>
+								<a href="#">Post Resume</a>
+							</li>
+							
+							<li>
+								<a href="#">Create Healthcare Job Alerts</a>
+							</li>
+							
+							<li>
+								<a href="#">Research Colleges</a>
+							</li>
+							
+							<li>
+								<a href="#">Degree Programs</a>
+							</li>
+							
+							<li>
+								<a href="#">Resume Writing Service</a>
+							</li>
+						</ul><!-- /.list-links -->
+						
+						<nav class="nav-access">
+							<ul>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+								
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+							</ul>
+						</nav><!-- /.nav-access -->
+					</div><!-- /.footer-col-inner -->
+				</div><!-- /.footer-col footer-col-1of4 -->
+				
+				<div class="footer-col footer-col-1of4">
+					<h5>
+						Employers
+						
+						<i class="ico ico-footer-arrow-down"></i>
+					</h5>
+					
+					<div class="footer-col-inner">
+						<ul class="list-links">
+							<li>
+								<a href="#">Plans &amp; Pricing</a>
+							</li>
+							
+							<li>
+								<a href="#">Post Healthcare Jobs</a>
+							</li>
+							
+							<li>
+								<a href="#">Search Resumes</a>
+							</li>
+						</ul><!-- /.list-links -->
+						
+						<nav class="nav-access">
+							<ul>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+								
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+							</ul>
+						</nav><!-- /.nav-access -->
+					</div><!-- /.footer-col-inner -->
+				</div><!-- /.footer-col footer-col-1of4 -->
+				
+				<div class="footer-col footer-col-1of4">
+					<h5>
+						Partners 
+						
+						<i class="ico ico-footer-arrow-down"></i>
+					</h5>
+					
+					<div class="footer-col-inner">
+						<ul class="list-links">
+							<li>
+								<a href="#">Advertiser Solutions</a>
+							</li>
+							
+							<li>
+								<a href="#">Submit XML Job Feed</a>
+							</li>
+						</ul><!-- /.list-links -->
+						
+						<nav class="nav-access">
+							<ul>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+								
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+							</ul>
+						</nav><!-- /.nav-access -->
+					</div><!-- /.footer-col-inner -->
+				</div><!-- /.footer-col footer-col-1of4 -->
+				
+				<div class="footer-col footer-col-1of4">
+					<h5>
+						CareerVitals
+						
+						<i class="ico ico-footer-arrow-down"></i>
+					</h5>
+					
+					<div class="footer-col-inner">
+						<ul class="list-links">
+							<li>
+								<a href="#">About</a>
+							</li>
+							
+							<li>
+								<a href="#">Contact Us</a>
+							</li>
+							
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+							
+							<li>
+								<a href="#">Terms of Service</a>
+							</li>
+						</ul><!-- /.list-links -->
+						
+						<nav class="nav-access">
+							<ul>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+								
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+							</ul>
+						</nav><!-- /.nav-access -->
+					</div><!-- /.footer-col-inner -->
+				</div><!-- /.footer-col footer-col-1of4 -->
+			</div><!-- /.shell -->
+		</div><!-- /.footer-content -->
+		
+		<div class="footer-inner">
+			<div class="shell">
+				<div class="socials">
+					<ul>
+						<li>
+							<a href="#">
+								<i class="ico ico-facebook"></i>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<i class="ico ico-twitter"></i>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#" class="logo-small"></a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<i class="ico ico-google"></i>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#">
+								<i class="ico ico-linkedin"></i>
+							</a>
+						</li>
+					</ul>
+				</div><!-- /.socials -->
+				
+				<p class="copyright">
+					&copy;2016 CareerVitals. All Rights Reserved
+				</p><!-- /.copyright -->
+				
+				<p class="credits">Web Design by Basso Design Group</p><!-- /.credits -->
+			</div><!-- /.shell -->
+		</div><!-- /.footer-inner -->
+	</footer><!-- /.footer -->
+</div><!-- /.wrapper -->
+</body>
+</html>
